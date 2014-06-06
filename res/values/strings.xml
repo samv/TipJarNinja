@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TipJar</string>
+    <string name="app_name">TipJar.ninja</string>
+
+    <string name="title_tip_bar">Tip Jar</string>
+    <string name="title_adjust_bill">Adjust Bill</string>
+    <string name="title_pay_bill">Pay Bill</string>
+
+    <!-- home page -->
+    <string name="ft_bill">Bill:</string>
+    <string name="ft_tax">Tax:</string>
+    <string name="ft_tip">Tip:</string>
+    <string name="ft_total">Total:</string>
+
+    <!-- bill fixed strings -->
+    <string name="bill_shared">Share of split amount</string>
+    <string name="bill_extras">Extras</string>
+    <string name="bill_subtotal">Subtotal</string>
+    <string name="bill_tax">Tax</string>
+    <string name="bill_tip">Tip</string>
+    <string name="ft_covering">Also Covering:</string>
+    <string name="ft_tip_change">Tip Remaining</string>
+
 </resources>

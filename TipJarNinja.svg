@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="TipJarNinja.svg">
   <defs
      id="defs4">
     <filter
@@ -137,9 +137,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.7055274"
-     inkscape:cx="228.38311"
-     inkscape:cy="149.33494"
+     inkscape:zoom="1.20599"
+     inkscape:cx="231.3347"
+     inkscape:cy="179.41878"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -636,10 +636,6 @@
          inkscape:connector-curvature="0"
          id="minus-5-icon-6"
          d="m 379.61017,-7.3641027 h -8.89259 v -2.47716 h 8.89259 v 2.47716 z m 4.13667,-1.36482 c 0,4.786749 -3.8804,8.66714899 -8.66716,8.66714899 -4.78675,0 -8.66715,-3.88039999 -8.66715,-8.66714899 0,-4.7867603 3.8804,-8.6671603 8.66715,-8.6671603 4.78676,0 8.66716,3.8804 8.66716,8.6671603 z m -1.68294,0 c 0,-3.8604603 -3.1243,-6.9842203 -6.98422,-6.9842203 -3.86046,0 -6.98421,3.12434 -6.98421,6.9842203 0,3.860459 3.1243,6.9842089 6.98421,6.9842089 3.86047,0 6.98422,-3.1243399 6.98422,-6.9842089 z" />
-      <path
-         inkscape:connector-curvature="0"
-         id="user-11-icon-3"
-         d="m 402.51573,82.014866 h -20.1084 c 0,-4.43525 -0.35661,-6.87965 4.27969,-7.94892 4.53848,-1.04681 9.01827,-1.98252 6.86464,-5.94873 -6.38186,-11.75298 -1.81949,-18.41618 5.03384,-18.41618 6.72087,0 11.91639,6.62894 5.03383,18.41618 -1.67171,2.86307 -3.46056,5.32445 -3.46056,7.95749 0,2.29598 0.89643,4.38622 2.35696,5.94015 z m 12.25414,-5.94009 c 0,3.27531 -2.65527,5.93058 -5.93066,5.93058 -3.27531,0 -5.93058,-2.65527 -5.93058,-5.93058 0,-3.2753 2.65527,-5.93058 5.93058,-5.93058 3.27539,0 5.93066,2.65528 5.93066,5.93058 z m -2.28586,-0.90491 h -2.5672 v -2.5672 h -1.98244 v 2.5672 h -2.56719 v 1.98252 h 2.56719 v 2.56704 h 1.98244 v -2.56704 h 2.5672 v -1.98252 z" />
       <text
          xml:space="preserve"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
@@ -760,6 +756,14 @@
          d="m 472.416,-80.772066 c -3.59152,-3.591568 -9.41113,-3.596838 -13.00945,-0.01622 l -1.48138,-1.481428 -0.004,5.49245 5.49245,-0.0045 -1.40113,-1.401083 c 2.15959,-2.141793 5.6463,-2.136515 7.79901,0.01622 2.15829,2.158248 2.15829,5.657485 0,7.815688 -1.07914,1.079102 -2.49346,1.618653 -3.90782,1.618653 v 3.684346 c 2.35731,0 4.71449,-0.899272 6.51307,-2.697799 3.59697,-3.59707 3.59697,-9.429062 -5e-5,-13.026132 z"
          id="undo-2-icon"
          inkscape:connector-curvature="0" />
+      <path
+         inkscape:connector-curvature="0"
+         id="minus-5-icon-6-1-1"
+         d="m 379.15826,54.210839 h -8.89259 v -2.47716 h 8.89259 v 2.47716 z m 4.13667,-1.36482 c 0,4.78675 -3.8804,8.66715 -8.66716,8.66715 -4.78675,0 -8.66715,-3.8804 -8.66715,-8.66715 0,-4.78676 3.8804,-8.66716 8.66715,-8.66716 4.78676,0 8.66716,3.8804 8.66716,8.66716 z m -1.68294,0 c 0,-3.86046 -3.1243,-6.98422 -6.98422,-6.98422 -3.86046,0 -6.98421,3.12434 -6.98421,6.98422 0,3.86046 3.1243,6.98421 6.98421,6.98421 3.86047,0 6.98422,-3.12434 6.98422,-6.98421 z" />
+      <path
+         inkscape:connector-curvature="0"
+         id="plus-5-icon-5-8-7-3"
+         d="m 432.3208,52.863392 h -3.48591 v 3.48582 h -2.69201 v -3.48582 h -3.48591 v -2.69202 h 3.48591 v -3.48591 h 2.69201 v 3.48591 h 3.48591 v 2.69202 z m 4.49547,-1.4832 c 0,5.20193 -4.21697,9.4189 -9.4189,9.4189 -5.20193,0 -9.4189,-4.21697 -9.4189,-9.4189 0,-5.20193 4.21697,-9.4189 9.4189,-9.4189 5.20193,0 9.4189,4.21697 9.4189,9.4189 z m -1.82891,0 c 0,-4.1953 -3.39529,-7.58999 -7.58999,-7.58999 -4.19529,0 -7.58999,3.39533 -7.58999,7.58999 0,4.19529 3.39529,7.58998 7.58999,7.58998 4.19529,0 7.58999,-3.39532 7.58999,-7.58998 z" />
     </g>
     <rect
        style="opacity:0.81042654;fill:none;stroke:#000000;stroke-width:1.38747418;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
@@ -872,47 +876,7 @@
          x="525.81647"
          y="64.580238">Charlie Pays</tspan></text>
     <g
-       id="g5844"
-       transform="translate(169.57023,77.944264)"
-       style="filter:url(#filter5901)">
-      <path
-         inkscape:connector-curvature="0"
-         id="user-icon-2"
-         d="m 411.91592,154.05633 c -4.40788,-1.01671 -8.51091,-1.907 -6.52379,-5.65336 6.04856,-11.40341 1.60327,-17.50177 -4.78389,-17.50177 -6.51305,0 -10.84896,6.33243 -4.7839,17.50177 2.0467,3.76921 -2.21066,4.65853 -6.5238,5.65336 -4.40609,1.01611 -4.06719,3.33922 -4.06719,7.55424 h 30.74962 c 0,-4.2151 0.3389,-6.53813 -4.06705,-7.55424 z" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4715-7"
-         y="153.7131"
-         x="394.0386"
-         style="font-size:23.29932404px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
-         xml:space="preserve"><tspan
-           y="153.7131"
-           x="394.0386"
-           id="tspan4717-4"
-           sodipodi:role="line">A</tspan></text>
-    </g>
-    <g
-       id="g5839"
-       transform="translate(171.22862,78.358862)">
-      <path
-         inkscape:connector-curvature="0"
-         id="user-icon-8-2"
-         d="m 447.15669,154.05633 c -4.40788,-1.01671 -8.51091,-1.907 -6.5238,-5.65336 6.04856,-11.40341 1.60327,-17.50177 -4.78389,-17.50177 -6.51305,0 -10.84895,6.33243 -4.78389,17.50177 2.0467,3.76921 -2.21067,4.65853 -6.5238,5.65336 -4.40609,1.01611 -4.06719,3.33922 -4.06719,7.55424 h 30.74961 c 0,-4.2151 0.3389,-6.53813 -4.06704,-7.55424 z"
-         style="filter:url(#filter5913)" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text4715-5-1"
-         y="152.77435"
-         x="429.00864"
-         style="font-size:23.29932404px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
-         xml:space="preserve"><tspan
-           y="152.77435"
-           x="429.00864"
-           id="tspan4717-8-8"
-           sodipodi:role="line">B</tspan></text>
-    </g>
-    <g
-       transform="translate(425.13716,292.03445)"
+       transform="translate(399.33869,294.37977)"
        id="g5774-9">
       <rect
          y="-139.18263"
@@ -944,17 +908,61 @@
            id="tspan4003-8"
            sodipodi:role="line">47.25</tspan></text>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
-       x="528.34674"
-       y="200.25861"
-       id="text5722-6"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5724-7"
+    <g
+       id="g6303"
+       transform="translate(19.486066,44.361895)">
+      <g
+         style="filter:url(#filter5901)"
+         transform="translate(169.57023,77.944264)"
+         id="g5844">
+        <path
+           d="m 411.91592,154.05633 c -4.40788,-1.01671 -8.51091,-1.907 -6.52379,-5.65336 6.04856,-11.40341 1.60327,-17.50177 -4.78389,-17.50177 -6.51305,0 -10.84896,6.33243 -4.7839,17.50177 2.0467,3.76921 -2.21066,4.65853 -6.5238,5.65336 -4.40609,1.01611 -4.06719,3.33922 -4.06719,7.55424 h 30.74962 c 0,-4.2151 0.3389,-6.53813 -4.06705,-7.55424 z"
+           id="user-icon-2"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:23.29932404px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+           x="394.0386"
+           y="153.7131"
+           id="text4715-7"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4717-4"
+             x="394.0386"
+             y="153.7131">A</tspan></text>
+      </g>
+      <g
+         transform="translate(171.22862,78.358862)"
+         id="g5839">
+        <path
+           style="filter:url(#filter5913)"
+           d="m 447.15669,154.05633 c -4.40788,-1.01671 -8.51091,-1.907 -6.5238,-5.65336 6.04856,-11.40341 1.60327,-17.50177 -4.78389,-17.50177 -6.51305,0 -10.84895,6.33243 -4.78389,17.50177 2.0467,3.76921 -2.21067,4.65853 -6.5238,5.65336 -4.40609,1.01611 -4.06719,3.33922 -4.06719,7.55424 h 30.74961 c 0,-4.2151 0.3389,-6.53813 -4.06704,-7.55424 z"
+           id="user-icon-8-2"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-size:23.29932404px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+           x="429.00864"
+           y="152.77435"
+           id="text4715-5-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4717-8-8"
+             x="429.00864"
+             y="152.77435">B</tspan></text>
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5722-6"
+         y="200.25861"
          x="528.34674"
-         y="200.25861">Also Covering:</tspan></text>
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+         xml:space="preserve"><tspan
+           y="200.25861"
+           x="528.34674"
+           id="tspan5724-7"
+           sodipodi:role="line">Also Covering:</tspan></text>
+    </g>
     <text
        xml:space="preserve"
        style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
@@ -967,60 +975,64 @@
          id="tspan5837"
          x="273.21951"
          y="193.45393" /></text>
-    <text
-       xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
-       x="557.34534"
-       y="259.13141"
-       id="text5722-6-8"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan5724-7-3"
-         x="557.34534"
-         y="259.13141">Tip Remaining</tspan></text>
-    <path
-       d="m 547.80043,251.55329 v 8.31248 h -8.31248 v -8.31248 h 8.31248 z m 1.23148,-1.23148 h -10.77544 v 10.77544 h 10.77544 v -10.77544 z m -2.9436,2.66634 -3.32521,3.32514 -1.44031,-1.44064 -1.068,1.06821 2.5084,2.50908 4.39361,-4.39398 -1.06849,-1.06781 z"
-       id="checkbox-4-icon-9"
-       inkscape:connector-curvature="0" />
     <g
-       id="g5973"
-       transform="translate(199.00663,97.015733)">
+       id="g6315"
+       transform="translate(-2.4875829,-58.872796)">
       <text
          sodipodi:linespacing="125%"
-         id="text5722-6-5"
-         y="185.74771"
-         x="326.82928"
+         id="text5722-6-8"
+         y="259.13141"
+         x="557.34534"
          style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
          xml:space="preserve"><tspan
-           y="185.74771"
+           y="259.13141"
+           x="557.34534"
+           id="tspan5724-7-3"
+           sodipodi:role="line">Tip Remaining</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="checkbox-4-icon-9"
+         d="m 547.80043,251.55329 v 8.31248 h -8.31248 v -8.31248 h 8.31248 z m 1.23148,-1.23148 h -10.77544 v 10.77544 h 10.77544 v -10.77544 z m -2.9436,2.66634 -3.32521,3.32514 -1.44031,-1.44064 -1.068,1.06821 2.5084,2.50908 4.39361,-4.39398 -1.06849,-1.06781 z" />
+      <g
+         transform="translate(199.00663,97.015733)"
+         id="g5973">
+        <text
+           xml:space="preserve"
+           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
            x="326.82928"
-           id="tspan5724-7-2"
-           sodipodi:role="line">Tip:</tspan></text>
-      <rect
-         y="180.98419"
-         x="361.17926"
-         height="1.4388731"
-         width="85.577332"
-         id="rect3180-8"
-         style="opacity:0.81042654;fill:none;stroke:#0200f1;stroke-width:3.46874332;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <rect
-         y="178.8846"
-         x="415.16666"
-         height="5.6380806"
-         width="3.7587264"
-         id="rect3182-0"
-         style="opacity:0.81042654;fill:none;stroke:#0200f1;stroke-width:3.77999997;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3184-1"
-         y="186.77789"
-         x="453.32794"
-         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
-         xml:space="preserve"><tspan
-           y="186.77789"
+           y="185.74771"
+           id="text5722-6-5"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan5724-7-2"
+             x="326.82928"
+             y="185.74771">Tip:</tspan></text>
+        <rect
+           style="opacity:0.81042654;fill:none;stroke:#0200f1;stroke-width:3.46874332;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect3180-8"
+           width="85.577332"
+           height="1.4388731"
+           x="361.17926"
+           y="180.98419" />
+        <rect
+           style="opacity:0.81042654;fill:none;stroke:#0200f1;stroke-width:3.77999997;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+           id="rect3182-0"
+           width="3.7587264"
+           height="5.6380806"
+           x="415.16666"
+           y="178.8846" />
+        <text
+           xml:space="preserve"
+           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
            x="453.32794"
-           id="tspan3186-94"
-           sodipodi:role="line">15%</tspan></text>
+           y="186.77789"
+           id="text3184-1"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3186-94"
+             x="453.32794"
+             y="186.77789">15%</tspan></text>
+      </g>
     </g>
     <text
        xml:space="preserve"
@@ -1132,5 +1144,140 @@
          id="tspan5983-7-5-1-5"
          x="635.47626"
          y="147.05757">$5.75</tspan></text>
+    <path
+       sodipodi:type="spiral"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="path6197"
+       sodipodi:cx="-73.798294"
+       sodipodi:cy="465.84427"
+       sodipodi:expansion="1"
+       sodipodi:revolution="3"
+       sodipodi:radius="3.3167772"
+       sodipodi:argument="-18.849556"
+       sodipodi:t0="0"
+       d="m -73.798294,465.84427 c 0.166298,0 0.08204,0.22417 0,0.2764 -0.222338,0.14154 -0.484631,-0.0623 -0.552796,-0.2764 -0.121932,-0.38306 0.187534,-0.75168 0.552796,-0.8292 0.536036,-0.11375 1.023498,0.31338 1.105592,0.8292 0.10942,0.6875 -0.43927,1.29715 -1.105592,1.38199 -0.838498,0.10676 -1.571719,-0.56515 -1.658389,-1.38199 -0.104968,-0.9893 0.691016,-1.84681 1.658389,-1.93479 1.140016,-0.10368 2.122224,0.81687 2.211185,1.93479 0.102709,1.29068 -0.942719,2.39786 -2.211185,2.48758 -1.441312,0.10195 -2.673643,-1.06856 -2.763981,-2.48758 -0.101345,-1.59193 1.194404,-2.94954 2.763981,-3.04038 1.742528,-0.10085 3.225521,1.32024 3.316777,3.04038"
+       transform="translate(57.736328,-201.01359)" />
+    <path
+       d="m 414.97815,-11.700928 c -4.40788,-1.01671 -8.51091,-1.907 -6.5238,-5.65336 6.04856,-11.40341 1.60327,-17.501771 -4.78389,-17.501771 -6.51305,0 -10.84895,6.332431 -4.7839,17.501771 2.0467,3.76921 -2.21066,4.65853 -6.52379,5.65336 -4.40609,1.01611 -4.06719,3.3392195 -4.06719,7.5542395 h 30.74961 c 0,-4.2151 0.3389,-6.5381295 -4.06704,-7.5542395 z"
+       id="user-icon-8-3"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.55710602px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+       x="418.14627"
+       y="-18.759102"
+       id="text6299"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0973192,0.91131188)"><tspan
+         sodipodi:role="line"
+         id="tspan6301"
+         x="418.14627"
+         y="-18.759102">1</tspan></text>
+    <image
+       y="150.46002"
+       x="634.18298"
+       id="image6424"
+       xlink:href="file:///home/samv/projects/codepath/TipJar/res/drawable-xhdpi/paid-stamp.png"
+       height="36.19445"
+       width="36.19445" />
+    <rect
+       style="opacity:0.81042654;fill:none;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect4005-9"
+       width="201.09157"
+       height="34.956104"
+       x="295.50232"
+       y="118.39774" />
+    <path
+       d="m 325.35897,144.32178 c -4.40788,-1.0167 -8.51091,-1.907 -6.52379,-5.65335 6.04856,-11.40341 1.60327,-17.50177 -4.78389,-17.50177 -6.51305,0 -10.84896,6.33243 -4.7839,17.50177 2.0467,3.7692 -2.21066,4.65853 -6.52379,5.65335 -4.4061,1.01611 -4.0672,3.33922 -4.0672,7.55425 h 30.74962 c 0,-4.2151 0.3389,-6.53814 -4.06705,-7.55425 z"
+       id="user-icon-82"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g4452-09"
+       transform="translate(215.16942,158.28257)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3976-6-3"
+         y="-15.700068"
+         x="121.83965"
+         style="font-size:17.0796051px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+         xml:space="preserve"><tspan
+           y="-15.700068"
+           x="121.83965"
+           id="tspan3978-5-0"
+           sodipodi:role="line">$</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4001-8-3"
+         y="-16.933008"
+         x="130.65253"
+         style="font-size:23.22591972px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+         xml:space="preserve"><tspan
+           y="-16.933008"
+           x="130.65253"
+           id="tspan4003-2-0"
+           sodipodi:role="line">61</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:14.16891956px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+       x="371.88348"
+       y="135.41376"
+       id="text4460-99"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4462-6"
+         x="371.88348"
+         y="135.41376">63</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+       x="312.96838"
+       y="143.69751"
+       id="text4695-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4697-5"
+         x="312.96838"
+         y="143.69751">t</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:23.29932404px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ff00ff;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+       x="307.48166"
+       y="143.97856"
+       id="text4715-73"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4717-9"
+         x="307.48166"
+         y="143.97856">A</tspan></text>
+    <image
+       y="120.02533"
+       x="458.27792"
+       id="image6549"
+       xlink:href="file:///home/samv/projects/codepath/TipJar/res/drawable-xhdpi/Merlin2525_Paid_Business_Stamp_2.png"
+       height="31.102362"
+       width="31.429758" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+       x="423.02124"
+       y="139.98439"
+       id="text3184-9"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3186-4"
+         x="423.02124"
+         y="139.98439">15%</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Jura;-inkscape-font-specification:Jura"
+       x="401.32507"
+       y="139.39377"
+       id="text6573"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6575"
+         x="401.32507"
+         y="139.39377">tip:</tspan></text>
   </g>
 </svg>

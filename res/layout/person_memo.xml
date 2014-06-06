@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+  <!-- used for the GridView on the pay bill activity -->
+  <ImageButton
+     android:id="@+id/ibPersonMemo"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerVertical="true"
+     android:layout_centerHorizontal="true"
+     android:src="@drawable/iconmonstr-user-icon"
+     />
+  <TextView
+     android:id="@+id/tvPersonId"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentLeft="true"
+     android:layout_centerVertical="true"
+     android:text="A"
+     />
+</RelativeLayout>

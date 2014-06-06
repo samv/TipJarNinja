@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+   >
+
+  <!-- "Charlie Pays" -->
+  <TextView
+     android:id="@+id/tvBillPayerTitle"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     android:text="Charlie Pays"
+     />
+
+  <TableLayout
+     android:id="@+id/tlBillLines"
+     android:orientation="horizontal"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     >
+
+    <!-- could use an adapter here, too: but the items are always the same. -->
+    <TableRow android:id="@+id/trSharedSplit">
+      <TextView
+         android:id="@+id/tvSharedTitle"
+         android:layout_gravity="left"
+         android:text="Share of split amount (1/3)"
+         />
+      <TextView
+         android:id="@+id/tvSharedAmount"
+         android:layout_gravity="right"
+         android:text="33.34"
+         />
+    </TableRow>
+
+    <TableRow android:id="@+id/trExtras">
+      <TextView
+         android:id="@+id/tvExtrasTitle"
+         android:layout_gravity="left"
+         android:text="@strings/bill_extras"
+         />
+      <TextView
+         android:id="@+id/tvExtrasAmount"
+         android:layout_gravity="right"
+         android:text="5.00"
+         />
+    </TableRow>
+
+    <TableRow android:id="@+id/trSub">
+      <TextView
+         android:id="@+id/tvSubTitle"
+         android:layout_gravity="left"
+         android:text="@strings/bill_subtotal"
+         />
+      <TextView
+         android:id="@+id/tvSubAmount"
+         android:layout_gravity="right"
+         android:text="38.34"
+         />
+    </TableRow>
+
+    <TableRow android:id="@+id/trTax">
+      <TextView
+         android:id="@+id/tvTaxTitle"
+         android:layout_gravity="left"
+         android:text="Tax (8.25%)"
+         />
+      <TextView
+         android:id="@+id/tvTaxAmount"
+         android:layout_gravity="right"
+         android:text="$3.17"
+         />
+    </TableRow>
+
+    <TableRow android:id="@+id/trTip">
+      <TextView
+         android:id="@+id/tvTipTitle"
+         android:layout_gravity="left"
+         android:text="Tip (15%)"
+         />
+      <TextView
+         android:id="@+id/tvTaxAmount"
+         android:layout_gravity="right"
+         android:text="$5.75"
+         />
+    </TableRow>
+  </TableLayout>
+
+  <!-- FIXME: this dollar amount widget appears often enough, it
+              should probably be its own layout/widget/?? -->
+  <LinearLayout
+     android:id="@+id/llPaid"
+     android:orientation="horizontal"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     >
+    <TextView
+       android:id="@+id/tvPaidCurrencySign"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="$"
+       />
+    <EditText
+       android:id="@+id/etPaidAmount"
+       android:inputType="numberDecimal"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:hint="47.25"
+       />
+    <ImageButton
+       android:id="@+id/ibMarkPaid"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/paid-stamp"
+       />
+  </LinearLayout>
+
+  <!-- FIXME: switch to radio: a) extra to group, b) extra to tip -->
+  <LinearLayout
+     android:id="@+id/llTipChange"
+     android:layout_below="@id/tlBillLines"
+     android:orientation="horizontal"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     >
+    <CheckBox
+       android:id="@+id/cbTipChange"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       />
+    <TextView
+       android:id="@+id/tvTipChangeTitle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/ft_tip_change"
+       />
+  </LinearLayout>
+
+  <LinearLayout
+     android:id="@+id/llTip"
+     android:orientation="horizontal"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     >
+    <TextView
+       android:id="@+id/tvTip"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/ft_tip"
+       android:layout_gravity="right"
+       />
+    <SeekBar
+       android:id="@+id/sbTipPercent"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:max="25"
+       android:minWidth="250px"
+       />
+    <TextView
+       android:id="@+id/tvTipPercent"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:text="XX%"
+       />
+  </LinearLayout>
+
+  <!-- "also covering" -- allow picking up other people's checks -->
+  <TextView
+     android:id="@+id/tvAlsoCoveringTitle"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="@strings/ft_covering"
+     android:layout_gravity="center_horizontal"
+    />
+
+  <GridView
+     android:id="@+id/gvAlsoCovering"
+     android:layout_width="fill_parent" 
+     android:layout_height="fill_parent"
+     android:columnWidth="90dp"
+     android:numColumns="auto_fit"
+     android:verticalSpacing="10dp"
+     android:horizontalSpacing="10dp"
+     android:stretchMode="columnWidth"
+     android:layout_gravity="center_horizontal"
+     />
+
+
+</LinearLayout>
+
