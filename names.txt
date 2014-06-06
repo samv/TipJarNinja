@@ -1,0 +1,79 @@
+{'A': 'Abigail',
+ 'B': 'Bella',
+ 'C': 'Camila',
+ 'D': 'Delilah',
+ 'E': 'Emma',
+ 'F': 'Faith',
+ 'G': 'Genesis',
+ 'H': 'Hailey',
+ 'I': 'Isabella',
+ 'J': 'Jocelyn',
+ 'K': 'Kimberly',
+ 'L': 'Lily',
+ 'M': 'Mia',
+ 'N': 'Natalie',
+ 'O': 'Olivia',
+ 'P': 'Penelope',
+ 'Q': 'Quinn',
+ 'R': 'Ruby',
+ 'S': 'Sophia',
+ 'T': 'Taylor',
+ 'V': 'Victoria',
+ 'W': 'Willow',
+ 'X': 'Ximena',
+ 'Y': 'Yaretzi',
+ 'Z': 'Zoe'}
+
+{'A': 'Alexander',
+ 'B': 'Benjamin',
+ 'C': 'Christopher',
+ 'D': 'Daniel',
+ 'E': 'Ethan',
+ 'F': 'Francisco',
+ 'G': 'Gabriel',
+ 'H': 'Henry',
+ 'I': 'Isaac',
+ 'J': 'Jacob',
+ 'K': 'Kevin',
+ 'L': 'Liam',
+ 'M': 'Matthew',
+ 'N': 'Noah',
+ 'O': 'Oliver',
+ 'P': 'Parker',
+ 'Q': 'Quinn',
+ 'R': 'Ryan',
+ 'S': 'Sebastian',
+ 'T': 'Tyler',
+ 'U': 'Uriel',
+ 'V': 'Victor',
+ 'W': 'William',
+ 'X': 'Xavier',
+ 'Y': 'Yahir',
+ 'Z': 'Zachary'}
+
+Starting with A: set(['AVERY', 'ARIEL', 'AMARI', 'ALEXIS', 'ANGEL'])
+Starting with B: set(['BLAKE'])
+Starting with C: set(['CASEY', 'CAMERON', 'CHARLIE'])
+Starting with D: set(['DAKOTA', 'DEVYN', 'DYLAN'])
+Starting with E: set(['EMERSON', 'EMERY', 'EDEN'])
+Starting with F: set(['FRANKIE', 'FINLEY'])
+Starting with G: set(['GUADALUPE'])
+Starting with H: set(['HARPER', 'HAYDEN', 'HARLEY'])
+IRA
+Starting with J: set(['JESSIE', 'JAYLEN', 'JUSTICE', 'JAMIE', 'JAYLIN', 'JORDAN', 'JAYDEN'])
+Starting with K: set(['KAYDEN', 'KAI', 'KENNEDY'])
+Starting with L: set(['LOGAN', 'LONDON'])
+Starting with M: set(['MILAN', 'MARLEY', 'MORGAN'])
+NEO
+OLLIE
+Starting with P: set(['PEYTON', 'PARKER', 'PAYTON', 'PHOENIX', 'PRESLEY'])
+Starting with Q: set(['QUINN'])
+Starting with R: set(['REAGAN', 'RYAN', 'ROWAN', 'REESE', 'RIVER', 'RILEY'])
+Starting with S: set(['SKYLAR', 'SAGE', 'SHILOH', 'SKYLER', 'SAWYER'])
+Starting with T: set(['TAYLOR', 'TATUM'])
+ULLA
+VAL
+WINNIE
+XANDRIA
+YANNICK
+ZARA
