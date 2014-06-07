@@ -9,7 +9,7 @@
      android:layout_height="wrap_content"
      android:layout_alignParentLeft="true"
      android:layout_centerVertical="true"
-     android:src="@drawable/iconmonstr-user-icon"
+     android:src="@drawable/iconmonstr_user_icon"
      />
   <!-- place the letter on top of the icon! -->
   <TextView
@@ -40,7 +40,7 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_gravity="center_vertical"
-         android:src="@drawable/iconmonstr-minus-5-icon"
+         android:src="@drawable/iconmonstr_minus_5_icon"
          />
       <TextView
          android:id="@+id/tvDueCurrencySign"
@@ -68,14 +68,14 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_gravity="center_vertical"
-         android:src="@drawable/iconmonstr-plus-5-icon"
+         android:src="@drawable/iconmonstr_plus_5_icon"
          />
       <ImageButton
          android:id="@+id/ibPayBill"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_gravity="center_vertical"
-         android:src="@drawable/iconmonstr-banknote-multi-6-icon"
+         android:src="@drawable/iconmonstr_banknote_multi_6_icon"
          />
     </LinearLayout>
     
@@ -125,7 +125,7 @@
          android:id="@+id/ivPaid"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
-         android:src="@drawable/Merlin2525_Paid_Business_Stamp_2"
+         android:src="@drawable/merlin2525_paid_business_stamp_2"
          />
     </LinearLayout>
 

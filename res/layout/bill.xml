@@ -116,7 +116,7 @@
        android:id="@+id/ibMarkPaid"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:src="@drawable/paid-stamp"
+       android:src="@drawable/paid_stamp"
        />
   </LinearLayout>
 
