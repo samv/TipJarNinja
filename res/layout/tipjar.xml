@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/ninja_bg"
     >
   <TableLayout
      android:id="@+id/tlBillDetails"
@@ -15,7 +16,6 @@
        android:id="@+id/trBillSubEntry"
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
-       android:gravity="center_horizontal"
        >
       <TextView
          android:layout_column="1"
@@ -52,7 +52,6 @@
        android:id="@+id/trBillTaxEntry"
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
-       android:gravity="center_horizontal"
        >
       <CheckBox
          android:id="@+id/cbBillTaxMode"
@@ -102,7 +101,6 @@
        android:id="@+id/trTipAmountEntry"
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
-       android:gravity="center_horizontal"
        >
       <TextView
          android:layout_column="1"
@@ -139,7 +137,6 @@
        android:id="@+id/trBillTotalEntry"
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
-       android:gravity="center_horizontal"
        >
       <TextView
          android:layout_column="1"
@@ -172,12 +169,20 @@
     </TableRow>
   </TableLayout>
 
+  <TextView
+     android:id="@+id/tvWat"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/tlBillDetails"
+     android:text="wat wat wat wat"
+     />
+
   <!-- the list of people sharing the bill -->
   <ListView
      android:id="@+id/lvPeople"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:layout_below="@id/tlBillDetails"
+     android:layout_below="@id/tvWat"
      android:layout_alignParentLeft="true"
      android:layout_alignParentTop="true"
      />
@@ -188,10 +193,12 @@
      android:orientation="horizontal"
      android:layout_width="match_parent"
      android:layout_height="wrap_content"
-     android:layout_below="@id/lvPeople"
+     android:layout_below="@id/tvWat"
      android:layout_alignParentBottom="true"
      android:layout_centerHorizontal="true"
+     android:background="@drawable/alignment"
      >
+
     <ImageButton
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
