@@ -25,12 +25,12 @@
      android:id="@+id/vfDueOrPaid"
      android:layout_width="wrap_content"
      android:layout_height="wrap_content"
-     android:layout_alignRightOf="@id/PersonMemo"
+     android:layout_alignRight="@id/ibPersonMemo"
      android:layout_centerVertical="true"
      >
     <!-- pre-paid view, with + and - buttons -->
     <LinearLayout
-       id="@+id/llDue"
+       android:id="@+id/llDue"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:orientation="horizontal"
@@ -81,7 +81,7 @@
     
     <!-- post-paid view, with paid and net tip -->
     <LinearLayout
-       id="@+id/llPaid"
+       android:id="@+id/llPaid"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:orientation="horizontal"
@@ -112,7 +112,7 @@
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_gravity="bottom"
-         android:text="@strings/ft_tip"
+         android:text="@string/ft_tip"
          />
       <TextView
          android:id="@+id/tvTipPercent"

@@ -41,7 +41,7 @@
       <TextView
          android:id="@+id/tvExtrasTitle"
          android:layout_gravity="left"
-         android:text="@strings/bill_extras"
+         android:text="@string/bill_extras"
          />
       <TextView
          android:id="@+id/tvExtrasAmount"
@@ -54,7 +54,7 @@
       <TextView
          android:id="@+id/tvSubTitle"
          android:layout_gravity="left"
-         android:text="@strings/bill_subtotal"
+         android:text="@string/bill_subtotal"
          />
       <TextView
          android:id="@+id/tvSubAmount"
@@ -173,12 +173,12 @@
        />
   </LinearLayout>
 
-  <!-- "also covering" -- allow picking up other people's checks -->
+  <!-- "also covering" allow picking up other people's checks -->
   <TextView
      android:id="@+id/tvAlsoCoveringTitle"
      android:layout_width="fill_parent"
      android:layout_height="wrap_content"
-     android:text="@strings/ft_covering"
+     android:text="@string/ft_covering"
      android:layout_gravity="center_horizontal"
     />
 
