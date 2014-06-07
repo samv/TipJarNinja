@@ -1,9 +1,13 @@
 # TipJar Ninja
 
 TipJar Ninja is an application which helps you with splitting the bill
-at a restaurant.
+at a restaurant.  Ever been out to eat, and one big bill/check comes,
+and you need to split it, while letting some people pay extra for
+their extra side(s)/drink(s) (or maybe they had one fewer drink than
+most folk), pick up other people's checks, and deal with people who
+put down cash?
 
-![Video Walkthrough](anim_todo.gif)
+![Home screen](screenshots/tipjar.png)
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
