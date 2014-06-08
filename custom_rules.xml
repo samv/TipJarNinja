@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TipJarNinjaTest">
+  <!-- Properties for test suite -->
+  <property name="testsuite.source.dir" location="tests" />
+  <property name="testsuite.out.dir" location="logs" />
+  <property name="testsuite.junit.jar" location="/usr/share/java/junit4.jar" />
+
+  <!-- Compile the test suite -->
+  <target name="-compile-tests" depends="debug">
+    <path id="project.javac.classpath">
+      <path refid="project.all.jars.path" />
+      <path refid="tested.project.classpath" />
+      <pathelement path="${testsuite.junit.jar}" />
+    </path>
+
+    <javac encoding="${java.encoding}"
+	   source="${java.source}" target="${java.target}"
+	   debug="true" extdirs="" includeantruntime="false"
+	   destdir="${out.classes.absolute.dir}"
+	   verbose="${verbose}"
+	   classpathref="project.javac.classpath"
+	   fork="${need.javac.fork}">
+      <src path="${testsuite.source.dir}" />
+    </javac>
+  </target>
+
+  <!-- Run the test suite -->
+  <target name="run-tests" depends="-compile-tests">
+    <mkdir dir="${testsuite.out.dir}" />
+    <path id="project.java.classpath">
+      <path refid="project.all.jars.path" />
+      <path refid="tested.project.classpath" />
+      <pathelement path="${testsuite.junit.jar}" />
+      <pathelement path="${out.classes.absolute.dir}" />
+    </path>
+
+    <junit printsummary="yes" failureproperty="tests.failed">
+      <formatter type="brief" />
+      <classpath refid="project.java.classpath" />
+
+      <batchtest fork="yes" todir="${testsuite.out.dir}">
+	<fileset dir="${testsuite.source.dir}" />
+      </batchtest>
+    </junit>       
+  </target>
+</project>
