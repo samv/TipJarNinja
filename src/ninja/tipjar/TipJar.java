@@ -32,7 +32,7 @@ public class TipJar extends Activity
         state = new Bill(0d, 8.25, 15);
         findWidgets();
         connectWidgets();
-        update();
+        update(false);
     }
 
     private void findWidgets() {
@@ -64,9 +64,9 @@ public class TipJar extends Activity
                 // could use parseDouble
                 Double entered = new Double(et.getText().toString());
                 double diff = entered.doubleValue() - field.getState();
-                if ((diff > 0.0045) || (diff < -0.0045)) {
+                if ((diff >= 0.01) || (diff <= -0.01)) {
                     field.setState(entered.doubleValue());
-                    update();
+                    update(true);
                 }
             }
             catch (NumberFormatException nfe) {
@@ -118,11 +118,11 @@ public class TipJar extends Activity
     }
 
     /* function to update the various display widgets */
-    public void update()
+    public void update(boolean numeric)
     {
-        maybeSetText(etBillSubAmount, true,
+        maybeSetText(etBillSubAmount, numeric,
                      String.format("%.2f", state.getSubAmount()));
-        maybeSetText(etTaxAmount, true,
+        maybeSetText(etTaxAmount, numeric,
                      String.format("%.2f", state.getTaxAmount()));
         if (state.getTaxMode()) {
             maybeSetText(tvTaxPercent, false,
@@ -131,25 +131,25 @@ public class TipJar extends Activity
         else {
             // TODO -grey out stuff
         }
-        maybeSetText(etTipAmount, true,
+        maybeSetText(etTipAmount, numeric,
                      String.format("%.2f", state.getTipAmount()));
         maybeSetText(tvTipPercent, false,
                      String.format("%.1f%%", state.getTipPercent()));
         sbTipPercent.setProgress((int)(state.getTipPercent() * 10));
-        maybeSetText(etBillAmount, true,
+        maybeSetText(etBillAmount, numeric,
                      String.format("%.2f", state.getTotalAmount()));
     }
 
     public void setTip10pct(View x) {
         state.setTipPercent(10d);
-        update();
+        update(false);
     }
     public void setTip15pct(View x) {
         state.setTipPercent(15d);
-        update();
+        update(false);
     }
     public void setTip20pct(View x) {
         state.setTipPercent(20d);
-        update();
+        update(false);
     }
 }
