@@ -45,28 +45,69 @@ public class TipJar extends Activity
         etBillAmount = (EditText) findViewById(R.id.etBillAmount);
     }
 
+    public interface StateField{
+        public double getState();
+        public void setState(double Value);
+    };
+
+    class MoneyInputWatcher implements TextWatcher {
+        StateField field;
+        EditText et;
+        public MoneyInputWatcher(EditText editText, StateField stateField) {
+            field = stateField;
+            et = editText;
+        }
+
+        @Override
+        public void afterTextChanged(Editable e) {
+            try {
+                // could use parseDouble
+                Double entered = new Double(et.getText().toString());
+                double diff = entered.doubleValue() - field.getState();
+                if ((diff > 0.0045) || (diff < -0.0045)) {
+                    field.setState(entered.doubleValue());
+                    update();
+                }
+            }
+            catch (NumberFormatException nfe) {
+            }
+        }
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) { }
+        @Override
+        public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+    };
+
     private void connectWidgets() {
         etBillSubAmount.addTextChangedListener
-            (new TextWatcher() {
-                    @Override
-                    public void afterTextChanged(Editable et) {
-                        try {
-                            // could use parseDouble
-                            Double entered = new Double(etBillSubAmount.getText().toString());
-                            double diff = entered.doubleValue() - state.getSubAmount();
-                            if ((diff > 0.0045) || (diff < -0.0045)) {
-                                state.setSubAmount(entered.doubleValue());
-                                update();
-                            }
-                        }
-                        catch (NumberFormatException nfe) {
-                        }
-                    }
-                    @Override
-                    public void onTextChanged(CharSequence s, int start, int before, int count) { }
-                    @Override
-                    public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
-             });
+            (new MoneyInputWatcher
+             (etBillSubAmount, new StateField() {
+                     @Override public double getState() { return state.getSubAmount(); }
+                     @Override public void setState(double val) { state.setSubAmount(val); }
+              })
+             );
+        etTaxAmount.addTextChangedListener
+            (new MoneyInputWatcher
+             (etTaxAmount, new StateField() {
+                     @Override public double getState() { return state.getTaxAmount(); }
+                     @Override public void setState(double val) { state.setTaxAmount(val); }
+              })
+             );
+        etTipAmount.addTextChangedListener
+            (new MoneyInputWatcher
+             (etTipAmount, new StateField() {
+                     @Override public double getState() { return state.getTipAmount(); }
+                     @Override public void setState(double val) { state.setTipAmount(val); }
+              })
+             );
+        etBillAmount.addTextChangedListener
+            (new MoneyInputWatcher
+             (etBillAmount, new StateField() {
+                     @Override public double getState() { return state.getTotalAmount(); }
+                     @Override public void setState(double val) { state.setTotalAmount(val); }
+              })
+             );
+    }
     }
 
     /* function to update the various display widgets */
