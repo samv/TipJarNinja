@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -21,6 +23,7 @@ public class TipJar extends Activity
     SeekBar sbTipPercent;
     TextView tvTipPercent;
     EditText etBillAmount;
+    CheckBox cbTaxMode;
 
     /** Called when the activity is first created. */
     @Override
@@ -43,6 +46,7 @@ public class TipJar extends Activity
         sbTipPercent = (SeekBar) findViewById(R.id.sbTipPercent);
         tvTipPercent = (TextView) findViewById(R.id.tvTipPercent);
         etBillAmount = (EditText) findViewById(R.id.etBillAmount);
+        cbTaxMode = (CheckBox) findViewById(R.id.cbTaxMode);
     }
 
     public interface StateField{
@@ -116,6 +120,20 @@ public class TipJar extends Activity
                     @Override public void onStartTrackingTouch(SeekBar seekBar) {}
                     @Override public void onStopTrackingTouch(SeekBar seekBar) {}
              });
+        cbTaxMode.setOnCheckedChangeListener
+            (new CompoundButton.OnCheckedChangeListener() {
+                    @Override public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                        if (isChecked != state.getTaxMode()) {
+                            if (isChecked) {
+                                state.enableTaxMode();
+                            }
+                            else {
+                                state.disableTaxMode();
+                            }
+                            update(false);
+                        }
+                    }
+             });
     }
 
     void maybeSetText(TextView tv, boolean numeric, String newval) {
@@ -133,6 +151,7 @@ public class TipJar extends Activity
                      String.format("%.2f", state.getSubAmount()));
         maybeSetText(etTaxAmount, numeric,
                      String.format("%.2f", state.getTaxAmount()));
+        cbTaxMode.setChecked(state.getTaxMode());
         if (state.getTaxMode()) {
             maybeSetText(tvTaxPercent, false,
                          String.format("%.2f%%", state.getTaxPercent()));
