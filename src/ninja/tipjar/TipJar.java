@@ -163,7 +163,13 @@ public class TipJar extends Activity
                      String.format("%.2f", state.getTipAmount()));
         maybeSetText(tvTipPercent, false,
                      String.format("%.1f%%", state.getTipPercent()));
-        sbTipPercent.setProgress((int)(state.getTipPercent() * 10));
+        int new_progress = Math.round(Math.round(state.getTipPercent() * 10));
+        if (!numeric && (new_progress != sbTipPercent.getProgress())) {
+            if (new_progress > sbTipPercent.getMax()) {
+                sbTipPercent.setMax(new_progress + 1);
+            }
+            sbTipPercent.setProgress(new_progress);
+        }
         maybeSetText(etBillAmount, numeric,
                      String.format("%.2f", state.getTotalAmount()));
     }
