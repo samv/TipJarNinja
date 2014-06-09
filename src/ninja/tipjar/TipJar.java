@@ -62,4 +62,17 @@ public class TipJar extends Activity
         etBillAmount.setText
             (String.format("%.2f", state.getTotalAmount()));
     }
+
+    public void setTip10pct(View x) {
+        state.setTipPercent(10d);
+        update();
+    }
+    public void setTip15pct(View x) {
+        state.setTipPercent(15d);
+        update();
+    }
+    public void setTip20pct(View x) {
+        state.setTipPercent(20d);
+        update();
+    }
 }

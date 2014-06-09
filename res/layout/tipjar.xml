@@ -148,18 +148,21 @@
             android:id="@+id/btnTip10pct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="setTip10pct"
             android:text="10%"
             />
          <Button
             android:id="@+id/btnTip15pct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="setTip15pct"
             android:text="15%"
             />
          <Button
             android:id="@+id/btnTip20pct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="setTip20pct"
             android:text="20%"
             />
       </LinearLayout>
