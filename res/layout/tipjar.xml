@@ -87,7 +87,7 @@
          android:text="8.25"
          />
       <TextView
-         android:id="@+id/tvBillTaxPercent"
+         android:id="@+id/tvTaxPercent"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_centerHorizontal="true"
@@ -98,7 +98,7 @@
 
     <!-- "Tip" value slider/display -->
     <TableRow
-       android:id="@+id/trTipAmountEntry"
+       android:id="@+id/trTipPercentEntry"
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
        >
@@ -114,21 +114,81 @@
       <SeekBar
          android:layout_column="2"
          android:layout_span="2"
-         android:id="@+id/sbTipAmount"
-         android:layout_width="wrap_content"
+         android:id="@+id/sbTipPercent"
+         android:layout_width="250dip"
          android:layout_height="wrap_content"
          android:layout_centerHorizontal="true"
          android:layout_centerVertical="true"
-         android:max="25"
-         android:minWidth="250px"
+         android:max="250"
          />
       <TextView
-         android:id="@+id/tvBillTaxPercent"
+         android:id="@+id/tvTipPercent"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_centerHorizontal="true"
          android:layout_centerVertical="true"
          android:text="XX%"
+         />
+    </TableRow>
+
+    <!-- Tip quick-set button row -->
+    <TableRow
+       android:id="@+id/trTipPercentButtons"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+      <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:orientation="horizontal"
+         android:layout_span="5"
+         >
+         <Button
+            android:id="@+id/btnTip10pct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10%"
+            />
+         <Button
+            android:id="@+id/btnTip15pct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%"
+            />
+         <Button
+            android:id="@+id/btnTip20pct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20%"
+            />
+      </LinearLayout>
+    </TableRow>
+
+    <!-- Line showing calculated tip total -->
+    <TableRow
+       android:id="@+id/trTipAmount"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       >
+      <TextView
+         android:layout_column="2"
+         android:id="@+id/tvTipAmountCurrencySign"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:text="$"
+         />
+      <EditText
+         android:id="@+id/etTipAmount"
+         android:layout_column="3"
+         android:inputType="numberDecimal"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:text="15.00"
          />
     </TableRow>
 
@@ -145,7 +205,7 @@
          android:layout_height="wrap_content"
          android:layout_alignParentRight="true"
          android:layout_centerVertical="true"
-         android:text="@string/ft_bill"
+         android:text="@string/ft_total"
          />
       <TextView
          android:layout_column="2"
