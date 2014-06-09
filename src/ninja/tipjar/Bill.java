@@ -32,6 +32,10 @@ public class Bill {
         return sub_amount;
     };
 
+    public void setSubAmount(double subAmount) {
+        sub_amount = subAmount;
+    };
+
     public double getTipAmount() {
         return sub_amount * tip_target_pct / 100d;
     };

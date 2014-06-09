@@ -31,5 +31,12 @@ public class TipJarTest {
         assertNotNull(bill);
         assertModelState(100.0d, 123.25d, 8.25d, 8.25d, 15d, 15d);
     }
+
+    @Test
+    public void testSetSubAmount() {
+        bill.setSubAmount(0);
+        assertModelState(0d, 0d, 8.25d, 0d, 15d, 0d);
+        bill.setSubAmount(22.50);
+        assertModelState(22.50d, 27.731d, 8.25d, 1.856d, 15d, 3.375d);
     }
 }
