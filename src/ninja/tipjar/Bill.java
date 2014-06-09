@@ -84,6 +84,10 @@ public class Bill {
         tax_rate_pct = taxPercent;
     }
 
+    public boolean getTaxMode() {
+        return !tax_exclusive;
+    }
+
     public void disableTaxMode() {
         sub_amount += getTaxAmount();
         saved_tax_rate_pct = tax_rate_pct;
