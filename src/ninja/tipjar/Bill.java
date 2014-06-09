@@ -53,6 +53,18 @@ public class Bill {
         return tax_rate_pct;
     };
 
+    public void setTaxAmount(double taxAmount) {
+        if (sub_amount == 0) {
+            if (tax_rate_pct == 0) {
+                tax_rate_pct = 10;  // FIXME: get from settings
+            }
+            sub_amount = taxAmount * 100 / tax_rate_pct;
+        }
+        else {
+            tax_rate_pct = (taxAmount / sub_amount) * 100;
+        }
+    };
+
     public void setTaxPercent(double taxPercent) {
         tax_rate_pct = taxPercent;
     }

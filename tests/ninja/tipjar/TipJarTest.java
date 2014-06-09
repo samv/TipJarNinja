@@ -41,7 +41,7 @@ public class TipJarTest {
     }
 
     @Test
-    public void testSetTaxPercent() {
+    public void testSetTax() {
         bill.setTaxPercent(7.25);
         assertModelState(100.0d, 122.25d, 7.25d, 7.25d, 15d, 15d);
         // un-checking the 'tax mode' button means that the tax-inclusive
@@ -51,5 +51,17 @@ public class TipJarTest {
         // checking it again puts it back
         bill.enableTaxMode();
         assertModelState(100.0d, 122.25d, 7.25d, 7.25d, 15d, 15d);
+
+        // the tax amount can also be set, in which case the tax rate
+        // adjusts.
+        bill.setTaxAmount(8d);
+        assertModelState(100.0d, 123d, 8d, 8d, 15d, 15d);
+
+        // if no bill amount is entered, setting the tax amount sets
+        // the bill amount
+        bill.setSubAmount(0d);
+        assertModelState(0.0d, 0d, 8d, 0d, 15d, 0d);
+        bill.setTaxAmount(4d);
+        assertModelState(50.0d, 61.5d, 8d, 4d, 15d, 7.5d);
     }
 }
