@@ -11,6 +11,7 @@ public class Bill {
     /* tax mode: don't tip the tax! */
     boolean tax_exclusive;
     double tax_rate_pct;
+    double saved_tax_rate_pct;
 
     /* The selected tip */
     double tip_target_pct;
@@ -22,7 +23,7 @@ public class Bill {
     public Bill(double subAmount, double taxRatePct, double tipTargetPct) {
         sub_amount = subAmount;
         tax_rate_pct = taxRatePct;
-        tax_exclusive = (tax_rate_pct > 0);
+        tax_exclusive = (tax_rate_pct == 0);
         tip_target_pct = tipTargetPct;
         splits = new ArrayList<Split>();
         splits.add(new Split());
@@ -49,8 +50,26 @@ public class Bill {
     };
 
     public double getTaxPercent() {
-        return sub_amount * tax_rate_pct / 100d;
+        return tax_rate_pct;
     };
+
+    public void setTaxPercent(double taxPercent) {
+        tax_rate_pct = taxPercent;
+    }
+
+    public void disableTaxMode() {
+        sub_amount += getTaxAmount();
+        saved_tax_rate_pct = tax_rate_pct;
+        tax_rate_pct = 0;
+        tax_exclusive = true;
+    }
+
+    public void enableTaxMode() {
+        tax_rate_pct = saved_tax_rate_pct;
+        sub_amount = sub_amount /
+            ((100 + tax_rate_pct) / 100);
+        tax_exclusive = false;
+    }
 
     public double getTotalAmount() {
         return sub_amount + getTaxAmount() + getTipAmount();

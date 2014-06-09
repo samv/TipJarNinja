@@ -39,4 +39,17 @@ public class TipJarTest {
         bill.setSubAmount(22.50);
         assertModelState(22.50d, 27.731d, 8.25d, 1.856d, 15d, 3.375d);
     }
+
+    @Test
+    public void testSetTaxPercent() {
+        bill.setTaxPercent(7.25);
+        assertModelState(100.0d, 122.25d, 7.25d, 7.25d, 15d, 15d);
+        // un-checking the 'tax mode' button means that the tax-inclusive
+        // figure is the basis for the tip.
+        bill.disableTaxMode();
+        assertModelState(107.25d, 123.338d, 0d, 0d, 15d, 16.088d);
+        // checking it again puts it back
+        bill.enableTaxMode();
+        assertModelState(100.0d, 122.25d, 7.25d, 7.25d, 15d, 15d);
+    }
 }
