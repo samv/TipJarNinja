@@ -168,43 +168,4 @@
          />
     </TableRow>
   </TableLayout>
-
-  <TextView
-     android:id="@+id/tvWat"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_below="@id/tlBillDetails"
-     android:text="wat wat wat wat"
-     />
-
-  <!-- the list of people sharing the bill -->
-  <ListView
-     android:id="@+id/lvPeople"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_below="@id/tvWat"
-     android:layout_alignParentLeft="true"
-     android:layout_alignParentTop="true"
-     />
-
-  <!-- action buttons: add a person etc -->
-  <LinearLayout
-     android:id="@+id/llExtra"
-     android:orientation="horizontal"
-     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
-     android:layout_below="@id/tvWat"
-     android:layout_alignParentBottom="true"
-     android:layout_centerHorizontal="true"
-     android:background="@drawable/alignment"
-     >
-
-    <ImageButton
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:src="@drawable/iconmonstr_user_11_icon"
-       />
-  </LinearLayout>
-
 </RelativeLayout>
-
