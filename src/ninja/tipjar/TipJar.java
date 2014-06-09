@@ -108,29 +108,36 @@ public class TipJar extends Activity
               })
              );
     }
+
+    void maybeSetText(TextView tv, boolean numeric, String newval) {
+        if (tv.getText().toString() != newval) {
+            if (!numeric || (Double.parseDouble(newval) != Double.parseDouble(tv.getText().toString()))) {
+                tv.setText(newval);
+            }
+        }
     }
 
     /* function to update the various display widgets */
     public void update()
     {
-        etBillSubAmount.setText
-            (String.format("%.2f", state.getSubAmount()));
-        etTaxAmount.setText
-            (String.format("%.2f", state.getTaxAmount()));
+        maybeSetText(etBillSubAmount, true,
+                     String.format("%.2f", state.getSubAmount()));
+        maybeSetText(etTaxAmount, true,
+                     String.format("%.2f", state.getTaxAmount()));
         if (state.getTaxMode()) {
-            tvTaxPercent.setText
-                (String.format("%.2f%%", state.getTaxPercent()));
+            maybeSetText(tvTaxPercent, false,
+                         String.format("%.2f%%", state.getTaxPercent()));
         }
         else {
             // TODO -grey out stuff
         }
-        etTipAmount.setText
-            (String.format("%.2f", state.getTipAmount()));
-        tvTipPercent.setText
-            (String.format("%.1f%%", state.getTipPercent()));
+        maybeSetText(etTipAmount, true,
+                     String.format("%.2f", state.getTipAmount()));
+        maybeSetText(tvTipPercent, false,
+                     String.format("%.1f%%", state.getTipPercent()));
         sbTipPercent.setProgress((int)(state.getTipPercent() * 10));
-        etBillAmount.setText
-            (String.format("%.2f", state.getTotalAmount()));
+        maybeSetText(etBillAmount, true,
+                     String.format("%.2f", state.getTotalAmount()));
     }
 
     public void setTip10pct(View x) {
