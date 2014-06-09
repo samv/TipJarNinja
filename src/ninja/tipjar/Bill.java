@@ -31,4 +31,25 @@ public class Bill {
     public double getSubAmount() {
         return sub_amount;
     };
+
+    public double getTipAmount() {
+        return sub_amount * tip_target_pct / 100d;
+    };
+
+    public double getTipPercent() {
+        return tip_target_pct;
+    };
+
+    public double getTaxAmount() {
+        return sub_amount * tax_rate_pct / 100d;
+    };
+
+    public double getTaxPercent() {
+        return sub_amount * tax_rate_pct / 100d;
+    };
+
+    public double getTotalAmount() {
+        return sub_amount + getTaxAmount() + getTipAmount();
+    };
+
 }

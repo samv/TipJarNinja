@@ -15,8 +15,13 @@ public class TipJarTest {
     }
 
     @Test
-    public void thisAlwaysPasses() {
+    public void testMockupExample() {
         assertNotNull(bill);
         assertEquals(bill.getSubAmount(), 100.0d, 0.001d);
+        assertEquals(bill.getTaxAmount(), 8.25d, 0.001d);
+        assertEquals(bill.getTaxPercent(), 8.25d, 0.001d);
+        assertEquals(bill.getTipAmount(), 15d, 0.001d);
+        assertEquals(bill.getTipPercent(), 15.0d, 0.001d);
+        assertEquals(bill.getTotalAmount(), 123.25d, 0.001d);
     }
 }
