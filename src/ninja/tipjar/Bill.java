@@ -45,6 +45,21 @@ public class Bill {
         return tip_target_pct;
     };
 
+    public void setTipPercent(double tipPercent) {
+        tip_target_pct = tipPercent;
+    };
+
+    public void setTipAmount(double tipAmount) {
+        if (sub_amount == 0) {
+            // avoid divide by zero and add a feature:
+            // calculate subtotal from tip amount :)
+            sub_amount = tipAmount * 100 / tip_target_pct;
+        }
+        else {
+            tip_target_pct = (tipAmount / sub_amount) * 100;
+        }
+    };
+
     public double getTaxAmount() {
         return sub_amount * tax_rate_pct / 100d;
     };

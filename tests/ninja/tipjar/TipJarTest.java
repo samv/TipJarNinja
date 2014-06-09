@@ -64,4 +64,29 @@ public class TipJarTest {
         bill.setTaxAmount(4d);
         assertModelState(50.0d, 61.5d, 8d, 4d, 15d, 7.5d);
     }
+
+    @Test
+    public void testSetTip() {
+        // the buttons will call these...
+        bill.setTipPercent(20);
+        assertModelState(100.0d, 128.25d, 8.25d, 8.25d, 20d, 20d);
+        bill.setTipPercent(25);
+        assertModelState(100.0d, 133.25d, 8.25d, 8.25d, 25d, 25d);
+        bill.setTipPercent(15);
+        assertModelState(100.0d, 123.25d, 8.25d, 8.25d, 15d, 15d);
+
+        // the slider calls this
+        bill.setTipPercent(17d);
+        assertModelState(100.0d, 125.25d, 8.25d, 8.25d, 17d, 17d);
+
+        // setting the tip entry calls this
+        bill.setTipAmount(12d);
+        assertModelState(100.0d, 120.25d, 8.25d, 8.25d, 12d, 12d);
+
+        // again, bill can be back-calculated.
+        bill.setSubAmount(0);
+        assertModelState(0.0d, 0d, 8.25d, 0d, 12d, 0d);
+        bill.setTipAmount(12d);
+        assertModelState(100.0d, 120.25d, 8.25d, 8.25d, 12d, 12d);
+    }
 }
