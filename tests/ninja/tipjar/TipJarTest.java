@@ -89,4 +89,19 @@ public class TipJarTest {
         bill.setTipAmount(12d);
         assertModelState(100.0d, 120.25d, 8.25d, 8.25d, 12d, 12d);
     }
+
+    @Test
+    public void testSetTotalAmount() {
+        // setting the total adjusts the *tip*
+        bill.setTotalAmount(125d);
+        assertModelState(100.0d, 125d, 8.25d, 8.25d, 16.75d, 16.75d);
+
+        // un-setting the bill subtotal does the back-calculation again
+        bill.setSubAmount(0);
+        assertModelState(0.0d, 0d, 8.25d, 0d, 16.75d, 0d);
+
+        bill.setTotalAmount(150d);
+        assertModelState(120.0d, 150d, 8.25d, 9.9d, 16.75d, 20.1d);
+    }
+
 }

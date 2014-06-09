@@ -102,4 +102,16 @@ public class Bill {
         return sub_amount + getTaxAmount() + getTipAmount();
     };
 
+    public void setTotalAmount(double totalAmount) {
+        if (sub_amount == 0) {
+            // reverse mode, as others.
+            sub_amount = totalAmount /
+                (100 + tip_target_pct + tax_rate_pct) * 100;
+        }
+        else {
+            // setting total amount paid: update the tip percentage.
+            double tip = totalAmount - sub_amount - getTaxAmount();
+            tip_target_pct = (tip / sub_amount) * 100;
+        }
+    };
 }
