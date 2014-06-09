@@ -14,14 +14,22 @@ public class TipJarTest {
         bill = new Bill(100.0d, 8.25d, 15.0d);
     }
 
+    private void assertModelState(double subAmount, double totalAmount,
+                                  double taxPercent, double taxAmount,
+                                  double tipPercent, double tipAmount) {
+        assertEquals("Subtotal", bill.getSubAmount(), subAmount, 0.001d);
+        assertEquals("Tax %", bill.getTaxPercent(), taxPercent, 0.001d);
+        assertEquals("Tip %", bill.getTipPercent(), tipPercent, 0.001d);
+
+        assertEquals("Tax Amount", bill.getTaxAmount(), taxAmount, 0.001d);
+        assertEquals("Tip Amount", bill.getTipAmount(), tipAmount, 0.001d);
+        assertEquals("Total Amount", bill.getTotalAmount(), totalAmount, 0.001d);
+    }
+
     @Test
     public void testMockupExample() {
         assertNotNull(bill);
-        assertEquals(bill.getSubAmount(), 100.0d, 0.001d);
-        assertEquals(bill.getTaxAmount(), 8.25d, 0.001d);
-        assertEquals(bill.getTaxPercent(), 8.25d, 0.001d);
-        assertEquals(bill.getTipAmount(), 15d, 0.001d);
-        assertEquals(bill.getTipPercent(), 15.0d, 0.001d);
-        assertEquals(bill.getTotalAmount(), 123.25d, 0.001d);
+        assertModelState(100.0d, 123.25d, 8.25d, 8.25d, 15d, 15d);
+    }
     }
 }
