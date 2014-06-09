@@ -2,6 +2,8 @@ package ninja.tipjar;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.SeekBar;
@@ -26,8 +28,10 @@ public class TipJar extends Activity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tipjar);
+        // create the default model
         state = new Bill(0d, 8.25, 15);
         findWidgets();
+        connectWidgets();
         update();
     }
 
@@ -39,6 +43,30 @@ public class TipJar extends Activity
         sbTipPercent = (SeekBar) findViewById(R.id.sbTipPercent);
         tvTipPercent = (TextView) findViewById(R.id.tvTipPercent);
         etBillAmount = (EditText) findViewById(R.id.etBillAmount);
+    }
+
+    private void connectWidgets() {
+        etBillSubAmount.addTextChangedListener
+            (new TextWatcher() {
+                    @Override
+                    public void afterTextChanged(Editable et) {
+                        try {
+                            // could use parseDouble
+                            Double entered = new Double(etBillSubAmount.getText().toString());
+                            double diff = entered.doubleValue() - state.getSubAmount();
+                            if ((diff > 0.0045) || (diff < -0.0045)) {
+                                state.setSubAmount(entered.doubleValue());
+                                update();
+                            }
+                        }
+                        catch (NumberFormatException nfe) {
+                        }
+                    }
+                    @Override
+                    public void onTextChanged(CharSequence s, int start, int before, int count) { }
+                    @Override
+                    public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+             });
     }
 
     /* function to update the various display widgets */
