@@ -112,13 +112,13 @@
          android:text="@string/ft_tip"
          />
       <SeekBar
-         android:layout_column="2"
-         android:layout_span="2"
+         android:layout_column="3"
          android:id="@+id/sbTipPercent"
-         android:layout_width="250dip"
+         android:layout_width="200dip"
          android:layout_height="wrap_content"
          android:layout_centerHorizontal="true"
          android:layout_centerVertical="true"
+         android:minWidth="150dp"
          android:max="250"
          />
       <TextView
