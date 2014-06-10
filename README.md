@@ -7,7 +7,10 @@ their extra side(s)/drink(s) (or maybe they had one fewer drink than
 most folk), pick up other people's checks, and deal with people who
 put down cash?
 
-![Home screen](screenshots/tipjar.png)
+Well, this app won't help you with that, yet.  But, look below at what
+you can do!
+
+![Walk-through](screenshots/demo.gif)
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
