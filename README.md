@@ -19,7 +19,7 @@ GNU Lesser General Public License for more details.
 
 ## Project Statistics
 
-So far, approximately 8 hours of development time has been spent on
+So far, approximately 14 hours of development time has been spent on
 this application.
 
 ## Author and License
